@@ -5,7 +5,7 @@
   </head>
   <body>
 <?php
-    echo phpinfo();   
+    echo "Hello World!!";   
 ?>
   </body>
 </html>
