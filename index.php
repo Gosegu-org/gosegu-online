@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src=""https://code.jquery.com/jquery-1.11.0.min.js""></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">   
       $(document).ready( function() {
       $("#navbar").load("header/header.html"); 
