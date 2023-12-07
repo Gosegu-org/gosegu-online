@@ -30,7 +30,7 @@
             <center><h2>회원가입</h2></center>
             <span class="close-button" onclick="goToIndex()">&times;</span>
             <p class="signup-message">가입하시려면 아래 정보를 입력하세요</p>
-            <form action="../model/user/usercreate.php" method="post" onsubmit="return validateForm()">
+            <form action="../model/user/user_create.php" method="post" onsubmit="return validateForm()">
                 <label for="user_id">사용자 ID<span class="required">*</span></label>
                 <input type="text" id="user_id" name="user_id" required><br>
                 
