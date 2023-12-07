@@ -11,7 +11,7 @@
       <a href="/index.html"><img class="logo" src="/Assets/logo.png" alt="로고" /></a>
       <div class="navbar-links">
         <a href="/Forum/forum.php">Forum</a>
-        <a href="/About/about.php">About</a>
+        <a href="/about/about.php">About</a>
         <a href="/Member/member.php">Members</a>
         <?php
           session_start(); 
