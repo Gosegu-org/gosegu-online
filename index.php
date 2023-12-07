@@ -13,7 +13,7 @@
         <a href="#">Forum</a>
         <a href="#">About</a>
         <a href="#">Members</a>
-        <a href="#" class="login-button">로그인</a>
+        <a href="/user/register.php" class="login-button">로그인</a>
       </div>
     </nav>
     <div class="middle"></div>
