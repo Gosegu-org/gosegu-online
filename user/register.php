@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>회원가입</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/user/register.css">
     <script>
         function goToIndex() {
             window.location.href = 'index.php';
@@ -48,7 +48,7 @@
                 
                 <input type="submit" value="가입하기">
             </form>
-            <p class="login-message">이미 계정이 있으신가요? <a href="#">로그인</a></p>
+            <p class="login-message">이미 계정이 있으신가요? <a href="/user/login.php">로그인</a></p>
         </div>
     </div>
 </body>
