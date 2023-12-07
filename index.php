@@ -8,11 +8,11 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html"><img class="logo" src="/Assets/logo.png" alt="로고" /></a>
+      <a href="/index.html"><img class="logo" src="/Assets/logo.png" alt="로고" /></a>
       <div class="navbar-links">
-        <a href="#">Forum</a>
-        <a href="#">About</a>
-        <a href="#">Members</a>
+        <a href="/Forum/forum.php">Forum</a>
+        <a href="/About/about.php">About</a>
+        <a href="/Member/member.php">Members</a>
         <a href="/user/register.php" class="login-button">로그인</a>
       </div>
     </nav>
