@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    background-color: #f8dec1;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8dec1;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    height: 50px;
+  }
+  .middle {
+    height: 600px; /* 이미지를 넣을 div의 높이 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/Assets/main.png'); /* 이미지 경로 설정 */
+    background-size: 50%; /* 이미지를 div에 맞추기 위해 설정 */
+    background-repeat: no-repeat; /* 이미지 반복 설정 */
+    background-position: center; /* 이미지 위치 설정 */
+}
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #555;
+  }
+  
+  .login-button {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 100px; /* footer 높이만큼 아래에 여백 확보 */
+}
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #454f65;
+}
