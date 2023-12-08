@@ -1,0 +1,116 @@
+/* 공통 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8dec1;
+    margin: 0;
+    padding-bottom: 100px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* 네비게이션 바 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8dec1;
+    color: black;
+    padding: 10px;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.navbar-links a:hover {
+    background-color: #555;
+}
+
+.login-button {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* 사용자 정보 */
+.user-info {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h1 {
+    margin-bottom: 15px;
+}
+
+.user-info p {
+    margin-bottom: 10px;
+}
+
+/* 푸터 */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #454f65;
+}
+
+/* 사용자 정보 */
+.user-info {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 버튼 스타일 */
+.links {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    margin-top: 20px; /* 위쪽 여백 추가 */
+}
+
+.links a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8dec1;
+    color: black;
+    margin: 0 5px; /* 각 버튼 사이의 간격 조정 */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.links a:hover {
+    background-color: #555;
+    color: white;
+}
