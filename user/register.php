@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/user/register.css">
     <script>
         function goToIndex() {
-            window.location.href = '../index.php';
+            window.location.href = '/index.php';
         }
 
         function validateForm() {
