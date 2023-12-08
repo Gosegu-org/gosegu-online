@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <?php require_once("../header.php"); ?>
+    <?php require_once("../header/header.php"); ?>
     <nav class="navbar">
       <a href="index.html"
         ><img class="logo" src="../Assets/logo.png" alt="로고"
