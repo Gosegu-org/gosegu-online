@@ -8,10 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $api_endpoint = "api.gosegu.online:4029/signup.php";
 
+    $hashed_pw = password_hash($user_pw, PASSWORD_DEFAULT);
+    
     $data = array(
         'user_id' => $user_id,
         'user_name' => $user_name,
-        'user_pw' => $user_pw,
+        'user_pw' => $hashed_pw,
         'user_email' => $user_email,
         'user_comment' => $user_comment
     );
