@@ -25,7 +25,7 @@
             <h2>로그인</h2>
             <span class="close-button" onclick="goToIndex()">&times;</span>
             <p class="login-message">아래 정보로 로그인하세요</p>
-            <form action="/models/user/언젠가는 추가.php" method="post" onsubmit="return validateLoginForm()">
+            <form action="/models/user/user_login.php" method="post" onsubmit="return validateLoginForm()">
                 <label for="login_id">사용자 ID</label>
                 <input type="text" id="login_id" name="login_id" required><br>
 
