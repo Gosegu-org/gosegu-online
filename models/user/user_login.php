@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $data = array(
         'user_id' => $user_id,
-        'user_pw' => $hashed_pw,
+        'user_pw' => $user_pw,
     );
 
     $ch = curl_init($api_endpoint);
