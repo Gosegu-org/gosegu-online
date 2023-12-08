@@ -35,6 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo '<script>alert("회원가입이 완료되었습니다.");</script>';
             } elseif ($code == 409) {
                 echo '<script>alert("ID 혹은 이메일이 중복입니다.");</script>';
+            } elseif ($code == 403) {
+                echo '<script>alert("값이 비어있습니다.");</script>';
             } else {
                 echo '<script>alert("회원가입에 실패했습니다. 다시 시도해주세요.");</script>';
             }
