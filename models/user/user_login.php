@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
     if ($httpCode == 200) {
+        $_SESSION['user_id'] = $user_id;
+        $_SESSION['user_pw'] = $user_pw;
        echo $response;
     } elseif ($httpCode == 404) {
         echo '<script>alert("서버를 찾을 수 없습니다.");</script>';
