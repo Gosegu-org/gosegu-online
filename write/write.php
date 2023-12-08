@@ -13,7 +13,7 @@
   <body>
     <?php require_once("../header/header.php"); ?>
     <nav class="navbar">
-      <a href="index.html"
+      <a href="/header/header.html"
         ><img class="logo" src="../Assets/logo.png" alt="로고"
       /></a>
       <div class="navbar-links">
