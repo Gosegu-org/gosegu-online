@@ -11,11 +11,6 @@
         function goToIndex() {
             window.location.href = '/index.php';
         }
-
-        function validateLoginForm() {
-            // Validation logic can be added here
-            // ...
-        }
     </script>
 </head>
 
@@ -25,12 +20,12 @@
             <h2>로그인</h2>
             <span class="close-button" onclick="goToIndex()">&times;</span>
             <p class="login-message">아래 정보로 로그인하세요</p>
-            <form action="/models/user/user_login.php" method="post" onsubmit="return validateLoginForm()">
-                <label for="login_id">사용자 ID</label>
-                <input type="text" id="login_id" name="login_id" required><br>
+            <form action="/models/user/user_login.php" method="post">
+                <label for="user_id">사용자 ID</label>
+                <input type="text" id="user_id" name="user_id" required><br>
 
-                <label for="login_pw">비밀번호</label>
-                <input type="password" id="login_pw" name="login_pw" required><br><br>
+                <label for="user_pw">비밀번호</label>
+                <input type="password" id="user_pw" name="user_pw" required><br><br>
 
                 <input type="submit" value="로그인">
             </form>
