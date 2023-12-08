@@ -1,5 +1,5 @@
 <?php
-session_start();
+if (isset($_SESSION) === false){session_start();}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_id = $_POST['user_id'];
     $user_pw = $_POST['user_pw'];
@@ -20,16 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $response = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-    if ($httpCode == 200) {
-        $_SESSION['user_id'] = $user_id;
-        $_SESSION['user_pw'] = $user_pw;
-       echo $response;
-    } elseif ($httpCode == 404) {
-        echo '<script>alert("서버를 찾을 수 없습니다.");</script>';
-    } else {
-        echo '<script>alert("알 수 없는 오류 발생");</script>';
-    }
 
     curl_close($ch);
+
+    if ($httpCode == 200) {
+        $_SESSION['user_id'] = $user_id;
+        echo $response;
+     } elseif ($httpCode == 404) {
+         echo '<script>alert("서버를 찾을 수 없습니다.");</script>';
+     } else {
+         echo '<script>alert("알 수 없는 오류 발생");</script>';
+     }
+     
 }
 ?>
