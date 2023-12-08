@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_email = $_POST['user_email'];
     $user_comment = $_POST['user_comment'];
 
-    $api_endpoint = "api.gosegu.online:4029/signup.php";
+    $api_endpoint = "api.gosegu.online:4029/users/register.php";
 
     $hashed_pw = password_hash($user_pw, PASSWORD_DEFAULT);
     
