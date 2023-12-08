@@ -20,7 +20,7 @@
             echo '<a href="/user/profile.php" class="login-button">내 정보</a>';
           } else {
             // 로그인 되어 있지 않다면
-            echo '<a href="/user/register.php" class="login-button">로그인</a>';
+            echo '<a href="/user/login.php" class="login-button">로그인</a>';
           }
         ?>
       </div>
