@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_id = $_POST['user_id'];
     $user_pw = $_POST['user_pw'];
@@ -7,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $data = array(
         'user_id' => $user_id,
-        'user_pw' => $user_pw,
+        'user_pw' => $hashed_pw,
     );
 
     $ch = curl_init($api_endpoint);
@@ -20,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
     if ($httpCode == 200) {
-        echo $response;
+       echo $response;
     } elseif ($httpCode == 404) {
         echo '<script>alert("서버를 찾을 수 없습니다.");</script>';
     } else {
