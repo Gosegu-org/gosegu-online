@@ -16,7 +16,7 @@
         <?php
         session_start();
           if (isset($_SESSION['user_id'])===true) {
-            echo '<a href="/user/login.php" class="login-button">로그아웃</a>';
+            echo '<a href="/user/logout.php" class="login-button">로그아웃</a>';
           } else {
             // 로그인 되어 있지 않다면
             echo '<a href="/user/login.php" class="login-button">로그인</a>';
@@ -24,12 +24,6 @@
         ?>
       </div>
     </nav>
-    <?php
-
-$user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 'User not logged in';
-
-echo $user_id;
-?>
     <div class="middle"></div>
     <footer class="footer"></footer>
   </body>
