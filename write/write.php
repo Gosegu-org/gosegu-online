@@ -81,7 +81,7 @@
         document.getElementById("postForm").submit();
 
         // 페이지를 다른 경로로 이동
-        window.location.href = "/"; // Change the URL to your desired path
+        window.location.href = "https://www.gosegu.online/"; // Change the URL to your desired path
     }
 </script>
       </div>
