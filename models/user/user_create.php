@@ -1,13 +1,21 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_id = $_POST['user_id'];
+    $user_name = $_POST['user_name'];
     $user_pw = $_POST['user_pw'];
+    $user_email = $_POST['user_email'];
+    $user_comment = $_POST['user_comment'];
 
-    $api_endpoint = "api.gosegu.online:4029/users/login.php";
+    $api_endpoint = "api.gosegu.online:4029/users/register.php";
 
+    $hashed_pw = password_hash($user_pw, PASSWORD_DEFAULT);
+    
     $data = array(
         'user_id' => $user_id,
-        'user_pw' => $user_pw
+        'user_name' => $user_name,
+        'user_pw' => $hashed_pw,
+        'user_email' => $user_email,
+        'user_comment' => $user_comment
     );
 
     $ch = curl_init($api_endpoint);
@@ -26,18 +34,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $code = $responseData['code'];
 
             if ($code == 201) {
-                session_start();
-    $_SESSION['user_id'] = $user_id;
-    $_SESSION['user_pw'] = $user_pw;
-    header("Location: /index.php");
-    exit();
-
+                echo '<script>alert("회원가입이 완료되었습니다.");</script>';
+            } elseif ($code == 409) {
+                echo '<script>alert("ID 혹은 이메일이 중복입니다.");</script>';
             } elseif ($code == 403) {
-                echo '<script>alert("아이디 또는 비밀번호가 올바르지 않습니다.");</script>';
-            } elseif ($code == 400) {
-                echo '<script>alert("아이디 또는 비밀번호 값이 없습니다.");</script>';
+                echo '<script>alert("값이 비어있습니다.");</script>';
             } else {
-                echo '<script>alert("로그인에 실패했습니다. 다시 시도해주세요.");</script>';
+                echo '<script>alert("회원가입에 실패했습니다. 다시 시도해주세요.");</script>';
             }
         } else {
             echo '<script>alert("서버 응답 형식 오류");</script>';
