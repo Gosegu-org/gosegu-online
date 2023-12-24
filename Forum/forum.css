@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none; /* 밑줄 없애기 */
+  color: inherit; /* 부모 요소로부터 글자 색상 상속받기 */
+}
+
+.logo {
+  width: 150px;
+}
+body {
+  background-color: #f8dec1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8dec1;
+  color: white;
+  padding: 10px;
+  overflow: hidden;
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+
+.navbar-links a:hover {
+  background-color: #555;
+}
+
+.login-button {
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.middle {
+  margin-bottom: 200px;
+}
+
+.footer {
+  height: 350px;
+  background-color: #454f65;
+}
+
+.middle_box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.middle_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.middle_title h1 {
+  font-size: 48px;
+}
+.middle_title h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.buttons .btn {
+  padding: 5px 15px;
+  margin: 0;
+  background-color: white;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.buttons .btn:hover {
+  color: #757575;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  width: 200px;
+  border: 1px solid #000;
+  background-color: white;
+  transition: width 0.3s;
+  outline: none;
+}
+
+.search-bar:focus {
+  width: 250px;
+}
+
+.write_btn_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 20px;
+}
+
+.write_btn_wrap button {
+  width: 120px;
+  height: 30px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  background-color: #959fb7;
+  color: #f8dec1;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.write_btn_wrap button:hover {
+  opacity: 0.7;
+}
+
+.forum {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forum_left {
+  width: 80%;
+}
+
+.forum_left h3 {
+  margin-bottom: 10px;
+}
+
+.forum_right {
+  display: flex;
+  align-items: center;
+}
+
+.forum_icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.forum_icon div {
+  margin-right: 5px;
+}
+
+.new_title {
+  margin-left: 25px;
+  margin-top: 70px;
+}
+
+.new_forums {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.new_forum {
+  width: 28%;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.day {
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.new_forum_title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.new_forum_subtitle {
+  font-size: 11px;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.new_forum_text {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-bottom: 10px;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.new_forum_icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.category {
+  opacity: 0.7;
+}
