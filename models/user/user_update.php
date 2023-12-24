@@ -1,6 +1,7 @@
 <?php
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $user_id = $_SESSION['user_id'];
     $user_name = $_POST['user_name'];
     $user_pw = $_POST['user_pw'];
