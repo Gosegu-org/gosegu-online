@@ -21,7 +21,7 @@
           } else {
             // 로그인 되어 있지 않다면
             echo '<a href="/user/login.php" class="login-button">로그인</a>';
-          }
+          } 
         ?>
       </div>
     </nav>
