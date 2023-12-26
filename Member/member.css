@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    background-color: #f8dec1;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8dec1;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    height: 50px;
+  }
+
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #555;
+  }
+  
+  .login-button {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 100px; /* footer 높이만큼 아래에 여백 확보 */
+}
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #454f65;
+}
+
+/* member.css */
+/* 기존 CSS 스타일들 */
+.middle{
+    padding :10px;
+}
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #ddd !important;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #f2f2f2 !important;
+    font-weight: bold;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f9f9f9 !important;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f2f2f2 !important;
+  }
+  
