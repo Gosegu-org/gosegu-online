@@ -33,11 +33,11 @@
 <body>
     <div class="confirmation-box">
         <h2>계정을 삭제하시겠습니까?</h2>
-        <form action="/models/user/user_delete.php" method="POST">
+        <form action="../models/user/user_delete.php" method="POST">
             <input type="hidden" name="confirm_delete" value="yes">
             <button type="submit">네, 삭제합니다</button>
         </form>
-        <form action="/user/my_account.php">
+        <form action="../user/my_account.php">
             <button type="submit">아니요</button>
         </form>
     </div>
