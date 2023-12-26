@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/Assets/main.png'); /* 이미지 경로 설정 */
+    background-image: url('Assets/main.png'); /* 이미지 경로 설정 */
     background-size: 50%; /* 이미지를 div에 맞추기 위해 설정 */
     background-repeat: no-repeat; /* 이미지 반복 설정 */
     background-position: center; /* 이미지 위치 설정 */
