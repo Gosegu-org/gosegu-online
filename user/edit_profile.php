@@ -22,21 +22,21 @@
     ?>
     <meta charset="UTF-8">
     <title>개인정보 수정</title>
-    <link rel="stylesheet" href="/user/edit_profile.css">
+    <link rel="stylesheet" href="edit_profile.css">
 </head>
 <body>
 <nav class="navbar">
-      <a href="/index.php"><img class="logo" src="/Assets/logo.png" alt="로고" /></a>
+      <a href="../index.php"><img class="logo" src="../Assets/logo.png" alt="로고" /></a>
       <div class="navbar-links">
-        <a href="/Forum/forum.php">Forum</a>
-        <a href="/about/about.php">About</a>
-        <a href="/Member/member.php">Members</a>
+        <a href="../Forum/forum.php">Forum</a>
+        <a href="../about/about.php">About</a>
+        <a href="../Member/member.php">Members</a>
         <?php
           if (isset($_SESSION['user_id'])==true) {
-            echo '<a href="/user/my_account.php">내 정보</a>
-              <a href="/user/logout.php">로그아웃</a>';
+            echo '<a href="my_account.php">내 정보</a>
+              <a href="logout.php">로그아웃</a>';
           } else {
-            echo '<a href="/user/login.php" class="login-button">로그인</a>';
+            echo '<a href="login.php" class="login-button">로그인</a>';
           }
         ?>
       </div>
@@ -45,7 +45,7 @@
         <div class="signup-box">
             <center><h2>개인정보 수정</h2></center>
             <p class="signup-message">수정하시려면 아래 정보를 입력하세요</p>
-            <form action="/models/user/user_update.php" method="post">
+            <form action="../models/user/user_update.php" method="post">
                 <label for="user_name">사용자 이름</label>
                 <input type="text" id="user_name" name="user_name" value="<?php echo $user_info['user_name']; ?>" required><br>
                 
@@ -64,9 +64,9 @@
         
     </div>
     <div class="links">
-                <a href="/user/my_account.php">내 정보</a>
-                <a href="/user/edit_profile.php">개인정보 수정</a>
-                <a href="/user/delete_account.php">계정 삭제</a>  
-            </div>
+        <a href="my_account.php">내 정보</a>
+        <a href="edit_profile.php">개인정보 수정</a>
+        <a href="delete_account.php">계정 삭제</a>  
+    </div>
 </body>
 </html>

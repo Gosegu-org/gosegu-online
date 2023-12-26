@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>회원가입</title>
-    <link rel="stylesheet" href="/user/register.css">
+    <link rel="stylesheet" href="register.css">
     <script>
         function goToIndex() {
-            window.location.href = '/index.php';
+            window.location.href = '../index.php';
         }
 
         function validateForm() {
@@ -30,7 +30,7 @@
             <center><h2>회원가입</h2></center>
             <span class="close-button" onclick="goToIndex()">&times;</span>
             <p class="signup-message">가입하시려면 아래 정보를 입력하세요</p>
-            <form action="/models/user/user_create.php" method="post" onsubmit="return validateForm()">
+            <form action="../models/user/user_create.php" method="post" onsubmit="return validateForm()">
                 <label for="user_id">사용자 ID<span class="required">*</span></label>
                 <input type="text" id="user_id" name="user_id" required><br>
                 
@@ -48,7 +48,7 @@
                 
                 <input type="submit" value="가입하기">
             </form>
-            <p class="login-message">이미 계정이 있으신가요? <a href="/user/login.php">로그인</a></p>
+            <p class="login-message">이미 계정이 있으신가요? <a href="login.php">로그인</a></p>
         </div>
     </div>
 </body>

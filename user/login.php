@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>로그인</title>
-    <link rel="stylesheet" href="/user/login.css">
-    <!-- You'll link your CSS file here -->
+    <link rel="stylesheet" href="login.css">
+    <!-- Assuming login.css is in the same directory as this HTML file -->
     <script>
         // Your JavaScript functions can go here
         function goToIndex() {
-            window.location.href = '/index.php';
+            window.location.href = '../index.php';
         }
     </script>
 </head>
@@ -20,7 +20,7 @@
             <h2>로그인</h2>
             <span class="close-button" onclick="goToIndex()">&times;</span>
             <p class="login-message">아래 정보로 로그인하세요</p>
-            <form action="/models/user/user_login.php" method="post">
+            <form action="../models/user/user_login.php" method="post">
                 <label for="user_id">사용자 ID</label>
                 <input type="text" id="user_id" name="user_id" required><br>
 
@@ -29,7 +29,7 @@
 
                 <input type="submit" value="로그인">
             </form>
-            <p class="signup-message">계정이 없으신가요? <a href="/user/register.php">회원가입</a></p>
+            <p class="signup-message">계정이 없으신가요? <a href="register.php">회원가입</a></p>
         </div>
     </div>
 </body>

@@ -4,5 +4,5 @@ session_destroy();
 ?>
 <script>
     alert("You've been logged out");
-    location.replace('/index.php');
+    location.replace('../index.php');
 </script>
