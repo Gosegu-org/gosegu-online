@@ -98,16 +98,16 @@
         ><img class="logo" src="../Assets/logo.png" alt="로고"
       /></a>
       <div class="navbar-links">
-      <a href="/Forum/forum.php">Forum</a>
-        <a href="/about/about.php">About</a>
-        <a href="/Member/member.php">Members</a>
+      <a href="../Forum/forum.php">Forum</a>
+        <a href="about.php">About</a>
+        <a href="../Member/member.php">Members</a>
         <?php
           if (isset($_SESSION['user_id'])===true) {
-            echo '<a href="/user/my_account.php">내 정보</a>
-              <a href="/user/logout.php">로그아웃</a>';
+            echo '<a href="../user/my_account.php">내 정보</a>
+              <a href="../user/logout.php">로그아웃</a>';
           } else {
             // 로그인 되어 있지 않다면
-            echo '<a href="/user/login.php" class="login-button">로그인</a>';
+            echo '<a href="../user/login.php" class="login-button">로그인</a>';
           }
         ?>
       </div>
