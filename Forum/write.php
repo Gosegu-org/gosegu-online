@@ -55,7 +55,7 @@
          $user_pw = 'root';
         ?>
            
-     <form id="postForm" action="/models/post/post_create.php" method="post">
+     <form id="postForm" action="../models/post/post_create.php" method="post">
     <h2 class="text_title">글 작성</h2>
     <input type="hidden" id="user_id" name="user_id" value="<?php echo $user_id; ?>">
     <select id="categorySelect" name="category_id"> <!-- 이름을 category_id로 변경 -->
