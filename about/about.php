@@ -94,7 +94,7 @@
 </head>
 <body>
 <nav class="navbar">
-      <a href="/index.php"
+      <a href="../index.php"
         ><img class="logo" src="../Assets/logo.png" alt="로고"
       /></a>
       <div class="navbar-links">
